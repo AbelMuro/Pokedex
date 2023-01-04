@@ -106,4 +106,8 @@ body{
       width: 100px;
     }
 
+    .pokemonCard{
+      width: 300px;
+    }
+
 }
