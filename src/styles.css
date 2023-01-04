@@ -1,18 +1,109 @@
+@font-face {
+  font-family: "pokemonFont" ;
+  src: url("./Fonts/BebasNeue-Regular.ttf");
+}
+
+html{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+.background{
+  background-image: url("./images/pokemon background.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pokemonCard {
   font-family: sans-serif;
   text-align: center;
-  background-color: blue;
+  background-color: rgb(180, 215, 255);
   width: 400px;
-  margin: auto;
-  padding: 5px;
+  padding: 15px;
+  height: 600px;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.title{
+  color:rgb(0, 0, 0);
+  font-family: "pokemonFont";
+  font-size: 40px;
 }
 
 .selectBox {
   padding: 10px;
   width: 100%;
+  border-radius: 10px;
 }
+
+
+.pokemonContainer{
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 
 .pokemonImage {
   object-fit: contain;
-  width: 100%;
+  width: 50%;
+  margin: auto;
+  border-radius: 100%;
+  border: 3px solid rgb(231, 231, 231);
+}
+
+
+.buttonContainer{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button{
+  border-radius: 5px;
+  width: 150px;
+  padding: 15px;
+  background-color:rgb(32, 208, 252);
+  border: 0px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover{
+   background-color: rgb(31, 136, 255)
+}
+
+@media (max-width: 440px){
+    .buttonContainer{
+      width: 300px;
+    }
+    .button{
+      width: 100px;
+    }
+
 }
